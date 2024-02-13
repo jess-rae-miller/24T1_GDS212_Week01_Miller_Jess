@@ -20,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/PianoPuzzle.unity
     guid: 90647e4e9df193046bee729cd61f6a21
+  - enabled: 1
+    path: Assets/Scenes/IntroScene.unity
+    guid: 78885ac030339dd4b93640e5404414e3
   m_configObjects: {}
