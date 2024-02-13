@@ -7,6 +7,8 @@ public class PlayerCam : MonoBehaviour
     public float sensX;
     public float sensY;
 
+    [SerializeField] private bool lockMouse = true;
+
     public Transform orientation;
 
     float xRotation;

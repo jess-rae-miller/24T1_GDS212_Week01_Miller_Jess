@@ -1,3 +1,4 @@
+using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -7,7 +8,8 @@ public class PianoInteract : MonoBehaviour
     public string puzzleSceneName = "PianoPuzzleScene"; // Change this to the actual name of your puzzle scene.
     public float interactionDistance = 3f; // Adjust the interaction distance based on your scene.
 
-    public Text interactText; // Reference to the UI text element.
+    public TextMeshPro interactText;
+
 
     private void Update()
     {
@@ -29,7 +31,6 @@ public class PianoInteract : MonoBehaviour
 
     private bool IsPlayerNearPiano()
     {
-        // Assuming the piano has a box collider.
         Collider pianoCollider = GetComponent<Collider>();
 
         if (pianoCollider != null)

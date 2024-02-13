@@ -23,6 +23,12 @@ public class PianoNotes : MonoBehaviour
     public AudioSource CS1_Note;
     public AudioSource DS1_Note;
 
+    private void Start()
+    {
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
+    }
+
     public void C_Notes_Play()
     {
         C_Note.Play();
