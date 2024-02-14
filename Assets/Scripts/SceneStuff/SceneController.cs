@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class SceneController : MonoBehaviour
 {
@@ -11,14 +12,15 @@ public class SceneController : MonoBehaviour
             // Check if the correct sequence has been played
             if (PianoPuzzleManager.Instance != null && PianoPuzzleManager.Instance.IsCorrectSequencePlayed())
             {
-                DisableWall();
+                PlayerPrefs.SetInt("DisableWall", 1);  // Set a PlayerPrefs flag to disable the wall
+                SceneManager.LoadScene("MainScene");   // Load the main scene
             }
         }
     }
 
-    private void DisableWall()
+    public static void DisableWall(GameObject wall)
     {
-        if (wallToDisable != null)
-            wallToDisable.SetActive(false);
+        if (wall != null)
+            wall.SetActive(false);
     }
 }

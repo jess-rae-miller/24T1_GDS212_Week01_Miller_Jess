@@ -6,6 +6,7 @@ public class PersistentData : MonoBehaviour
 {
     [SerializeField] private GameObject player;
     [SerializeField] private Vector3 playerPosition;
+    [SerializeField] private GameObject wallToDisable;
 
     private void Awake()
     {
@@ -20,6 +21,13 @@ public class PersistentData : MonoBehaviour
             // Else, make this object persistent
             DontDestroyOnLoad(gameObject);
             SceneManager.sceneLoaded += OnSceneLoaded;
+        }
+
+        // Check if the wall should be disabled
+        if (PlayerPrefs.GetInt("DisableWall", 0) == 1)
+        {
+            SceneController.DisableWall(wallToDisable);
+            PlayerPrefs.SetInt("DisableWall", 0);  // Reset the PlayerPrefs flag
         }
     }
     void OnDestroy()
@@ -47,5 +55,10 @@ public class PersistentData : MonoBehaviour
         {
             playerPosition = player.transform.position;
         }
+    }
+    private void DisableWall()
+    {
+        if (wallToDisable != null)
+            wallToDisable.SetActive(false);
     }
 }
