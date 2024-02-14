@@ -5,13 +5,20 @@ using UnityEngine;
 
 public class UIPopups : MonoBehaviour
 {
-    [SerializeField] private TextMeshProUGUI UIPopup;
+    public GameObject popUp;
 
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))
         {
-
+            popUp.SetActive(true);
+        }
+    }
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            popUp.SetActive(false);
         }
     }
 

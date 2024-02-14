@@ -32,90 +32,107 @@ public class PianoNotes : MonoBehaviour
     public void C_Notes_Play()
     {
         C_Note.Play();
+        PianoPuzzleManager.Instance.CheckSequence("C");
     }
-
     public void D_Notes_Play()
     {
         D_Note.Play();
+        PianoPuzzleManager.Instance.CheckSequence("D");
     }
 
     public void E_Notes_Play()
     {
         E_Note.Play();
+        PianoPuzzleManager.Instance.CheckSequence("E");
     }
 
     public void F_Notes_Play()
     {
         F_Note.Play();
+        PianoPuzzleManager.Instance.CheckSequence("F");
     }
 
     public void G_Notes_Play()
     {
         G_Note.Play();
+        PianoPuzzleManager.Instance.CheckSequence("G");
     }
 
     public void A_Notes_Play()
     {
         A_Note.Play();
+        PianoPuzzleManager.Instance.CheckSequence("A");
     }
 
     public void B_Notes_Play()
     {
         B_Note.Play();
+        PianoPuzzleManager.Instance.CheckSequence("B");
     }
 
     public void C1_Notes_Play()
     {
         C1_Note.Play();
+        PianoPuzzleManager.Instance.CheckSequence("C1");
     }
 
     public void D1_Notes_Play()
     {
         D1_Note.Play();
+        PianoPuzzleManager.Instance.CheckSequence("D1");
     }
 
     public void E1_Notes_Play()
     {
         E1_Note.Play();
+        PianoPuzzleManager.Instance.CheckSequence("E1");
     }
 
     public void F1_Notes_Play()
     {
         F1_Note.Play();
+        PianoPuzzleManager.Instance.CheckSequence("F1");
     }
 
     public void CS_Notes_Play()
     {
         CS_Note.Play();
+        PianoPuzzleManager.Instance.CheckSequence("CS");
     }
 
     public void DS_Notes_Play()
     {
         DS_Note.Play();
+        PianoPuzzleManager.Instance.CheckSequence("DS");
     }
 
     public void FS_Notes_Play()
     {
         FS_Note.Play();
+        PianoPuzzleManager.Instance.CheckSequence("FS");
     }
 
     public void GS_Notes_Play()
     {
         GS_Note.Play();
+        PianoPuzzleManager.Instance.CheckSequence("GS");
     }
 
     public void Bb_Notes_Play()
     {
         Bb_Note.Play();
+        PianoPuzzleManager.Instance.CheckSequence("Bb");
     }
 
     public void CS1_Notes_Play()
     {
-        CS_Note.Play();
+        CS1_Note.Play();
+        PianoPuzzleManager.Instance.CheckSequence("CS1");
     }
 
     public void DS1_Notes_Play()
     {
-        DS_Note.Play();
+        DS1_Note.Play();
+        PianoPuzzleManager.Instance.CheckSequence("DS1");
     }
 }
