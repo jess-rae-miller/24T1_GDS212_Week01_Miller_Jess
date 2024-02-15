@@ -39,7 +39,6 @@ public class PianoPuzzleManager : MonoBehaviour
 
             if (currentIndex == sequence.Count)
             {
-                Debug.Log("Puzzle completed!");
 
                 if (correctAudio != null)
                     correctAudio.Play();
@@ -78,7 +77,7 @@ public class PianoPuzzleManager : MonoBehaviour
 
     private void FadeOutText(TextMeshProUGUI text)
     {
-        StartCoroutine(FadeTextToZeroAlpha(text, 1f));
+        StartCoroutine(FadeTextToZeroAlpha(text, 0.5f));
     }
 
     private IEnumerator FadeTextToZeroAlpha(TextMeshProUGUI text, float fadeDuration)

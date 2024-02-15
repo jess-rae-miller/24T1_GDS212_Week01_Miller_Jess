@@ -306,10 +306,20 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 2765540577174353665, guid: 9f7ff936ce3a62a4bb7be238b6f1eaaf,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 7.9
+      objectReference: {fileID: 0}
     - target: {fileID: 3549472042782256249, guid: 9f7ff936ce3a62a4bb7be238b6f1eaaf,
         type: 3}
       propertyPath: m_Name
       value: PlayButton
+      objectReference: {fileID: 0}
+    - target: {fileID: 3999565377752108302, guid: 9f7ff936ce3a62a4bb7be238b6f1eaaf,
+        type: 3}
+      propertyPath: m_Color.a
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4014383567647589240, guid: 9f7ff936ce3a62a4bb7be238b6f1eaaf,
         type: 3}
@@ -394,7 +404,7 @@ PrefabInstance:
     - target: {fileID: 4014383567647589240, guid: 9f7ff936ce3a62a4bb7be238b6f1eaaf,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -485
+      value: -477
       objectReference: {fileID: 0}
     - target: {fileID: 4014383567647589240, guid: 9f7ff936ce3a62a4bb7be238b6f1eaaf,
         type: 3}
@@ -419,8 +429,14 @@ PrefabInstance:
     - target: {fileID: 8636442831836737786, guid: 9f7ff936ce3a62a4bb7be238b6f1eaaf,
         type: 3}
       propertyPath: m_fontSize
-      value: 30
+      value: 37.9
       objectReference: {fileID: 0}
+    - target: {fileID: 8636442831836737786, guid: 9f7ff936ce3a62a4bb7be238b6f1eaaf,
+        type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 930ba6671f4280b4c90cb2a95f7da3b6,
+        type: 2}
     - target: {fileID: 8636442831836737786, guid: 9f7ff936ce3a62a4bb7be238b6f1eaaf,
         type: 3}
       propertyPath: m_fontStyle
@@ -428,13 +444,44 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8636442831836737786, guid: 9f7ff936ce3a62a4bb7be238b6f1eaaf,
         type: 3}
+      propertyPath: m_fontColor.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8636442831836737786, guid: 9f7ff936ce3a62a4bb7be238b6f1eaaf,
+        type: 3}
+      propertyPath: m_fontColor.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8636442831836737786, guid: 9f7ff936ce3a62a4bb7be238b6f1eaaf,
+        type: 3}
+      propertyPath: m_fontColor.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8636442831836737786, guid: 9f7ff936ce3a62a4bb7be238b6f1eaaf,
+        type: 3}
       propertyPath: m_fontSizeBase
-      value: 30
+      value: 37.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 8636442831836737786, guid: 9f7ff936ce3a62a4bb7be238b6f1eaaf,
+        type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: -1455075258809757668, guid: 930ba6671f4280b4c90cb2a95f7da3b6,
+        type: 2}
+    - target: {fileID: 8636442831836737786, guid: 9f7ff936ce3a62a4bb7be238b6f1eaaf,
+        type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 8636442831836737786, guid: 9f7ff936ce3a62a4bb7be238b6f1eaaf,
         type: 3}
       propertyPath: m_HorizontalAlignment
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8636442831836737786, guid: 9f7ff936ce3a62a4bb7be238b6f1eaaf,
+        type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -549,7 +596,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -632,10 +679,10 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: "These possessions hold not only material value but the history and stories
-    of our family. It is my earnest wish that you retrieve them before it's too late.\r\n\nI
-    confess, my mind falters, and the shadows beckon, unsure if this letter will
-    reach you in time. Find these treasures, my love, not just as possessions, but
-    as a testament to our enduring bond.\n\r\nYours always,\r\n\nGranny\r\r\n"
+    of our family. It is my earnest wish that you collect them before it's too late.\r\n\nI
+    confess, my mind falters, and the shadows beckon. I am unsure if this letter
+    will reach you in time. Find these treasures, my love, not just as possessions,
+    but as a testament to our eternal bond.\n\r\nYours always,\r\n\nGranny\r\r\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 4fdcb3c8466f78b45ad72a06eb19dffe, type: 2}
   m_sharedMaterial: {fileID: 2402331919272041264, guid: 4fdcb3c8466f78b45ad72a06eb19dffe,
@@ -663,8 +710,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 1.69
-  m_fontSizeBase: 1.69
+  m_fontSize: 1.77
+  m_fontSizeBase: 1.77
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -909,11 +956,10 @@ MonoBehaviour:
       m_Calls: []
   m_text: "My Dearest Oliver,\r\n\r\nI hope this letter finds you in good health
     and spirits. It pains me to admit that I have not seen you in far too many years,
-    and I fear that time is running out for me. My old bones ache, and the shadows
-    grow longer each day, signaling the inevitable approach of the end.\r\n\r\nI
-    have something of great importance to share with you, something that has been
-    locked away in the recesses of my home \u2013 treasures and heirlooms passed
-    down through generations. \n"
+    and I fear that time is running out for me. My old bones ache, signaling the
+    inevitable approach of the end.\r\n\r\nI have something of great importance to
+    share with you, something that has been locked away in the recesses of my home
+    \u2013 treasures and heirlooms passed down through generations. \n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 4fdcb3c8466f78b45ad72a06eb19dffe, type: 2}
   m_sharedMaterial: {fileID: 2402331919272041264, guid: 4fdcb3c8466f78b45ad72a06eb19dffe,
@@ -941,8 +987,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 1.69
-  m_fontSizeBase: 1.69
+  m_fontSize: 1.77
+  m_fontSizeBase: 1.77
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -1168,15 +1214,16 @@ MonoBehaviour:
       m_Calls: []
   m_text: '>'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 930ba6671f4280b4c90cb2a95f7da3b6, type: 2}
+  m_sharedMaterial: {fileID: -1455075258809757668, guid: 930ba6671f4280b4c90cb2a95f7da3b6,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4281479730
-  m_fontColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:

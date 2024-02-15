@@ -11,6 +11,7 @@ public class UIPopups : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
+            Debug.Log("do");
             popUp.SetActive(true);
         }
     }

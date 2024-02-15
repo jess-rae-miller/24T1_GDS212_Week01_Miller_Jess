@@ -11,14 +11,18 @@ public class SceneTransitions : MonoBehaviour
     }
      public void OptionsScene()
     {
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene(2);
     }
     public void LoadMainScene()
     {
-        SceneManager.LoadScene(2);
+        SceneManager.LoadScene(3);
+    }
+    public void ClearPlayerPrefs()
+    {
+        PlayerPrefs.DeleteAll();
     }
     public void LoadIntroScene()
     {
-        SceneManager.LoadScene(4);
+        SceneManager.LoadScene(1);
     }
 }
